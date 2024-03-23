@@ -13,11 +13,11 @@ func main() {
 	// 	log.Fatal(err)
 	// }
 
-	content, err := pdfbox.ExtractTextFromPdf("GENERATIVE_AI_WITH_LANGCHAIN.pdf")
+	content, err := pdfbox.ExtractTextFromPdf("./GENERATIVE_AI_WITH_LANGCHAIN.pdf")
 
 	if err != nil {
 		fmt.Println(err)
 	}
 
-	fmt.Println(*content)
+	fmt.Println(content)
 }
